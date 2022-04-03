@@ -1,0 +1,42 @@
+body{
+	font-family: 'Kanit', sans-serif;
+}
+
+.MainBody{
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+#ethan-name{
+	text-align: center;
+	font-size: 50px;
+}
+
+#ethan-quote{
+	text-align: center;
+	font-size: 30px;
+}
+
+#ethan-bio{
+	text-align: center;
+	font-size:25px;
+}
+
+.MainBody{
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+#kanishk-name{
+	text-align: center;
+	font-size: 50px;
+}
+
+#kanishk-quote{
+	text-align: center;
+	font-size: 30px;
+}
+
+#kanishk-bio{
+	text-align: center;
+	font-size:25px;

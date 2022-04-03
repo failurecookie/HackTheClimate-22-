@@ -1,0 +1,112 @@
+
+
+body{
+	background-color: #86BDF0;
+	font-family: 'Kanit', sans-serif;
+}
+
+.margin{
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+.topnav {
+	background-color: #86BDF0;
+	overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: auto;
+	padding: 14px 11%;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#a1{
+	text-align:center;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #63AAF2;
+	color: #f2f2f2;
+}
+
+.text{
+	color: #FFFFFF;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#heading{
+	font-size: 50px;
+	text-align: center;
+}
+
+#text-scaling{
+	font-size:22px;
+	text-align:center;
+}
+
+
+}
+
+  /* Bordered form */
+form {
+	border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+.boxed {
+	margin-left: 400px;
+	margin-right: 400px;
+	border: 3px solid;
+	color: #FFFFFF;
+	padding: 10px;
+}
+
+.active {
+  float: left;
+	color: #f2f2f2;
+	text-align: auto;
+	padding: 14px 11%;
+	text-decoration: none;
+	font-size: 11px;
+	text-align: center;
+	margin-left: 1px;
+	margin-right:  1px;
+}
+.active:hover {
+background-color: #63AAF2;
+	color: #FFFFFF;
+  
+}
+

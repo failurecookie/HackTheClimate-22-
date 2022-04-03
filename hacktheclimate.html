@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HacktheClimate</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<script src = "script.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- TopNav -->
+	<div class="topnav" style = "text-align:center;">
+		<a href="/index.html">Home</a>
+		<a href="/hacktheclimate.html">Start</a>
+		<a href="/contact.html">Creators</a>
+		<a href="/donate.html">Donate</a>
+	</div>
+<div>    
+	<div class = "text">How much energy do you use? (in Killawatt Hours)</div>
+	<input id = "q1" type = "text" placeholder = "# of KilaWatts"></input>
+	<button type="button" id ="b1" onclick="getInputValue();">Submit</button>
+	<div class = "text" id = "a1"></div><br></br>
+	<div id = "box" class="boxed">Using HackTheClimate, people have saved 10% on their electrical bills and contributed to stopping climate change. If everyone did this, you would prevent more than 400 billion tons of carbon emmisions to be released into the air.</div><br></br>
+	<div class = "text" id = "hours" style = "text-align:center; font-size: 30px"></div>
+	
+	<script>	
+function getInputValue(){
+	// Selecting the input element and get its value 
+	var q1 = document.getElementById("q1").value; 
+	var answer = q1 * 0.9;
+	document.getElementById("a1").innerHTML = "If you used HackTheClimate, you would have saved about " + Math.round(q1 * 0.1) + " kilawatt hours, and would have only payed for approximately " + Math.round(answer) + " kilawatt hours";
+
+	//round to whole numbsers for div
+	var numbs1 = answer/2;
+	var numbs2 = numbs1;
+	var hoursofhotwater = numbs1/6.75;
+	numbs1 = numbs1 % 6.75;
+	var hoursoflights = numbs1/0.6;
+	var hoursofclothesdryer = numbs2/4.75;
+	numbs2 = numbs2%4.75;
+	var hoursoflights = hoursoflights + (numbs2/0.6);
+	document.getElementById("hours").innerHTML = "You could try to save energy by reducing " + Math.round(hoursofhotwater) + " hours of hot water, " + Math.round(hoursofclothesdryer) + " hours of clothes dryer, " + Math.round(hoursoflights) + " hours of lights. If you do those things, you can help the climate and save on your energy bill. That figure may seem scary, but if you cut down a little everyday, over the course of a month, you can reduce your numbers greatly.";
+	
+}
+    </script>
+<br></br><br></br>
+	<h1><h1>Survey form</h1></h1>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+	
+	</Head>
+<div class = "text">
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+<body>
+<br>
+<br>
+	<p>Please provide your details:</p>
+		<label for="fname">Are you trying to save energy?:</label>
+  		<input type="text" id="fname" name="fname"><br><br>
+  		<label for="lname">How long are you willing to use HackTheClimate?</label>
+  		<input type="text" id="lname" name="lname"><br><br>
+      <label for="Donate">Would you consider donating to us?</label>
+      <input type="text" id="Donate" name="Donate"><br><br>
+<br>
+<br>
+	<p>Please select your preferred way to contact:</p>
+
+		<input type="radio" name="contact" value="email" >Email
+		<input type="radio" name="contact" value="phone" >Phone
+		<input type="radio" name="contact" value="message"> Message
+    <p>
+  <label for="number">Phone Number/Email:</label>
+    <input type="text" id="number" name="number"><br><br>
+<br>
+<br>
+	<p>
+	Please provide your Feedback
+		<input type="text" id="feedback" name="feedback">
+
+	</p>
+<br>
+<br>
+	<button type="button" onclick="myFunction()">Submit</button>
+
+<script>
+function myFunction() {
+ 
+	window.open('mailto:kanishkpprakash@gmail.com?subject=subject&body= submitted');
+}
+</script>
+
+</body>
+  </div>
+
+	
+</div>
+</body>
+</html>
